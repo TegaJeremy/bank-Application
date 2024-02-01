@@ -17,6 +17,7 @@ const otpSchema = new Schema<OTP & Document>({
      index:{expires:"300s"}}
 });
 
+
 const OTPModel = model<OTP & Document>('OTP', otpSchema);
 
 export default OTPModel;
